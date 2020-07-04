@@ -2,7 +2,7 @@
   <div>
      <div class="title">热销推荐</div>
      <ul>
-       <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+       <li class="item border-bottom" v-for="item of list" :key="item.id">
             <img class="item-img" :src="item.imgUrl" alt="">
             <div class="item-info">
                <p class="item-title">{{item.title}}</p>
@@ -17,25 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data: function () {
-    return {
-      recommendList: [{
-        id: '001',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/1911/29/29d9b9078000774fa3.img.jpg_200x200_3621a35a.jpg',
-        title: '北京欢乐谷',
-        desc: '亚洲唯一飞行式过山车等你来挑战'
-      }, {
-        id: '002',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/1507/cc/19733fc0135062788140cbb48ae606a7.water.jpg_200x200_d9ebe2fd.jpg',
-        title: '北京野生动物园',
-        desc: '敢与森林之王近距离接触吗？'
-      }, {
-        id: '003',
-        imgUrl: 'https://imgs.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
-        title: '故宫',
-        desc: '世界五大宫之首，穿越与您近在咫尺'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>

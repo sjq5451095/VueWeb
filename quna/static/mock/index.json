@@ -1,7 +1,6 @@
 {
   "ret": true,
   "data": {
-    "city" : "北京",
     "swiperList": [{
       "id": "001",
       "imgUrl": "https://imgs.qunarzz.com/sight/source/1606/85/c6b6bad1b977e.jpg_r_640x214_5c638941.jpg"

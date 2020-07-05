@@ -25,6 +25,7 @@ export default {
   },
   computed: {
     showSwiper () {
+      // 解决轮播首次加载顺序bug
       return this.list.length
     }
   }
